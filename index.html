@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURX RECORDS OFC</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #0d0d0d; color: white; margin: 0; padding: 0; text-align: center; }
+    header { padding: 60px 20px; background: linear-gradient(135deg, #5a00ff, #ff00c8); }
+    h1 { margin: 0; font-size: 3rem; font-weight: bold; }
+    p.tagline { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
+    .section { padding: 40px 20px; }
+    a { color: #ff66e6; text-decoration: none; font-size: 1.1rem; }
+    a:hover { text-decoration: underline; }
+    .socials { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
+    footer { padding: 20px; font-size: 0.9rem; background: #111; color: #999; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="aurx_logo.jpg" alt="AURX RECORDS OFC Logo" style="width:150px; margin-bottom:20px;" />
+    <h1>AURX RECORDS OFC</h1>
+    <p class="tagline">Official Record Label</p>
+  </header>
+
+  <div class="section">
+    <h2>Music</h2>
+    <iframe id="spotifyPlayer" style="border-radius:12px" width="80%" height="380" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  </div>
+
+  <div class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:aurxrecordsofc@outlook.com.br">aurxrecordsofc@outlook.com.br</a></p>
+    <p>WhatsApp: <a href="https://wa.me/13052971938">+1 305 297 1938</a></p>
+  </div>
+
+  <div class="section">
+    <h2>Socials</h2>
+    <div class="socials">
+      <a href="https://www.tiktok.com/@aurx.records.ofc" target="_blank">TikTok: @aurx.records.ofc</a>
+      <a href="https://www.instagram.com/aurx.records.ofc" target="_blank">Instagram: @aurx.records.ofc</a>
+    </div>
+  </div>
+
+  <footer>© 2025 AURX RECORDS OFC. All Rights Reserved.</footer>
+
+<script>
+  const startTime = Math.floor(Math.random() * 600);
+  const spotifyFrame = document.getElementById('spotifyPlayer');
+  spotifyFrame.src = `https://open.spotify.com/embed/playlist/6nDCUZ32sqJIzITRI1KLmc?t=${startTime}`;
+</script>
+
+</body>
+</html>
